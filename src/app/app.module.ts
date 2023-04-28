@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
 import { SharedModule } from './shared/shared.module';
 import { MarqueeComponent } from './components/marquee/marquee.component';
+import { StepsComponent } from './components/steps/steps.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MarqueeComponent } from './components/marquee/marquee.component';
     FooterComponent,
     SubscribeComponent,
     MarqueeComponent,
+    StepsComponent,
     
   ],
   imports: [
