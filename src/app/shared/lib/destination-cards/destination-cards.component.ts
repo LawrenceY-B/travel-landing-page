@@ -6,9 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./destination-cards.component.scss']
 })
 export class DestinationCardsComponent implements OnInit {
-  @Input() country: string =""
-  @Input() price: string =""
-  @Input() duration: string =""
+  @Input() city: string = ""
+  @Input() price: string = ""
+  @Input() duration: string = ""
+  @Input() ImgUrl: string = ""
   constructor() { }
 
   ngOnInit(): void {

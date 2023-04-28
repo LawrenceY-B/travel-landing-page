@@ -7,6 +7,7 @@ import { DestinationComponent } from './components/destination/destination.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
 import { SharedModule } from './shared/shared.module';
+import { MarqueeComponent } from './components/marquee/marquee.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SharedModule } from './shared/shared.module';
     DestinationComponent,
     FooterComponent,
     SubscribeComponent,
+    MarqueeComponent,
     
   ],
   imports: [

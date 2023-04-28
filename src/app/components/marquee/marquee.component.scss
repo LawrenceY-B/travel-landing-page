@@ -1,0 +1,35 @@
+:host {
+    width: 100vw;
+}
+
+div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    animation: move 40s linear infinite;
+
+
+
+    img {
+        object-fit: contain;
+        object-position: center;
+    }
+
+    img:hover {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+}

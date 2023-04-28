@@ -1,31 +1,51 @@
-section {
- 
+.card {
     height: 400px;
-    display: grid;
-   
-    position: relative;
-    transition: all .9s ease;
-    background:url('/assets/images/1.jpg') no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
     cursor: pointer;
-    justify-items: center;
-    justify-content: end;
 
     article {
-    
-       
-        align-self:self-end;
         background-color: #FFFFFF;
-        filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
-        border-radius: 24px;
-        * {
-            margin: 10px;
+        transition: transform 1s all ease;
+        transform: translateY(0%);
+
+
+        .card-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+
+            p {
+                text-transform: capitalize;
+                font-size: 18px;
+                color: #5E6282;
+            }
         }
-        z-index: 33;
+
+        span {
+            padding: 5px 15px;
+            display: flex;
+            gap: 5px;
+
+        }
+    }
+
+    .card-image {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
     }
 
 
 
-}
+    article:hover {
+        background-color: #ffffff;
+        transform: translateY(-40%);
+        transition: transform 0.5s linear;
+        height: 100%;
+    }
 
+}
