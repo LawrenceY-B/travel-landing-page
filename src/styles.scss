@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-family: 'Rubik Light';
+    src: url("assets/fonts/rubik/Rubik-Light.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik Regular';
+    src: url("assets/fonts/rubik/Rubik-Regular.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik Bold';
+    src: url("assets/fonts/rubik/Rubik-Bold.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik Medium';
+    src: url("assets/fonts/rubik/Rubik-Medium.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik ExtraBold';
+    src: url("assets/fonts/rubik/Rubik-ExtraBold.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik Black';
+    src: url("assets/fonts/rubik/Rubik-Black.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Volkhov Bold';
+    src: url("assets/fonts/Volkhov/Volkhov-Bold.ttf") format("opentype");
+  }
+  :root{
+    scroll-behavior: smooth;
+}
+
+input:focus{
+  outline: none;
+}
+
+  *{
+    font-family: "Rubik Light";
+    margin: 0px;
+    box-sizing: border-box;
+   
+  }
+
+  .light-theme{
+    --background-color: #ececec;
+    --text-color: #000000;
+    --box-color: #fff;
+    --searchplaceholder: #c2c2c2;
+    --threeoptionsborder: rgba(255,255,255,0.4);
+    --border-color: #c2c2c2;
+    --border-color: #c2c2c2;
+    --button-color: #4B56D2;
+    --button-text-color: #fff;
+    --box-colorTwo: #fff;
+    --border-colorTwo: #6d6d6d;
+}
+
+
+.dark-theme{
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --box-color: #1c1c1e;
+    --border-color: #1c1c1e;
+    --button-color: #1c1c1e;
+    --button-text-color: #fff;
+    /* --box-colorTwo: rgba(61, 61, 66, 0.5); */
+    --box-colorTwo: transparent;
+    --border-colorTwo: #6d6d6d;
+   
+}
+

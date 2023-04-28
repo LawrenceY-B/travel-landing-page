@@ -1,0 +1,14 @@
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+}

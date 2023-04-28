@@ -1,0 +1,31 @@
+section {
+ 
+    height: 400px;
+    display: grid;
+   
+    position: relative;
+    transition: all .9s ease;
+    background:url('/assets/images/1.jpg') no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    justify-items: center;
+    justify-content: end;
+
+    article {
+    
+       
+        align-self:self-end;
+        background-color: #FFFFFF;
+        filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+        border-radius: 24px;
+        * {
+            margin: 10px;
+        }
+        z-index: 33;
+    }
+
+
+
+}
+

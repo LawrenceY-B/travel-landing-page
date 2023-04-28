@@ -1,0 +1,17 @@
+<main [ngStyle]="{'background':'url(assets/images/trial.svg) right top no-repeat'}">
+    <nav class="hero-container">
+        <div class="hero-box">
+            <h4>Category</h4>
+            <h1 style="font-family: 'Volkhov Bold'; font-size: 64px;">We offer Best Services</h1>
+        </div>
+    </nav>
+    <section>
+        <app-service-cards [title]="'Calculated Weather'" [ImgUrl]="'assets/images/weather.svg'"
+            [text]="'Built Wicket longer admire do barton vanity itself do in it.'"></app-service-cards>
+        <app-service-cards [title]="'Best Flights'" [ImgUrl]="'assets/images/plane.svg'"
+            [text]="'Engrossed listening. Park gate sell they west hard for the.'"></app-service-cards>
+        <app-service-cards [title]="'Local Events'" [ImgUrl]="'assets/images/local.svg'"
+            [text]="'Barton vanity itself do in it. Preferd to men it engrossed listening. '"></app-service-cards>
+        <app-service-cards [title]="'Customization'" [ImgUrl]="'assets/images/customize.svg'" [text]="'We deliver outsourced aviation services for military customers'"></app-service-cards>
+    </section>
+</main>
