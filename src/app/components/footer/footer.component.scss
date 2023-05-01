@@ -33,7 +33,9 @@ section {
 
         div:nth-child(1) {
             flex-grow: 2;
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         div:nth-child(2) {

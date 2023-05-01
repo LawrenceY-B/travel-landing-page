@@ -1,3 +1,4 @@
+
 main {
     height: 100vh;
     display: flex;
@@ -7,11 +8,30 @@ main {
     text-align: center;
 
 }
-
+h1{
+    font-size: 64px;
+    font-family: 'Volkhov Bold';
+}
 section {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     width: 80%;
 
+}
+@media only screen and (max-width: 768px) {
+    :host{
+        margin-bottom: 350px;
+    }
+    main{
+        width: 100vw;
+        h1{
+            font-size: 52px;
+        }
+    }
+    
+    section{
+        flex-direction: column;
+       justify-content: center;
+    }
 }

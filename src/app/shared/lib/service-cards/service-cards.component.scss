@@ -1,6 +1,6 @@
 section {
     width: 302px;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -35,6 +35,12 @@ section:hover article{
     position: absolute;
     width: 30%;
     height: 40%;
-    bottom: 0%;
+    bottom: -20%;
     left: -10%;
+}
+@media only screen and (max-width: 768px) {
+    section{
+        // height: 300px;
+        width: 300px;
+    }
 }

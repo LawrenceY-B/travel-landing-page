@@ -4,6 +4,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 60px;
+    margin: 30px 0px;
 
     .textBox {
 
@@ -140,4 +141,13 @@ main {
         }
 
     }
+}
+@media only screen and (max-width: 768px) {
+main{
+    width: 100%;
+    flex-direction: column;
+    .textBox{
+        width: 90%;
+    }
+}
 }

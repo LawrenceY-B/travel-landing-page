@@ -1,25 +1,44 @@
-main{
+.body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    
+    width: 100vw;
+}
+main {
 
     height: 100vh;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    .hero-container{
-    display: flex;
-    width: 100%;
-    align-items: center;
+
+    .hero-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
     }
-    .hero-box{
+
+    .hero-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 20px;
 
-        .buttonbox{
+        h4,
+        h2,
+        p,
+        article {
+            margin: 10px 14px;
+        }
+
+        .buttonbox {
             display: inline-flex;
             align-items: center;
             gap: 20px;
-            button{
+
+            button {
                 padding: 10px 12px;
                 background-color: #F1A501;
                 color: #fff;
@@ -28,19 +47,22 @@ main{
                 font-size: 14px;
                 box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
             }
-            div{
+
+            div {
                 width: 30%;
                 display: inline-flex;
                 align-items: center;
                 justify-content: space-around;
-                span{
+
+                span {
                     border-radius: 100%;
                     background-color: #DF6951;
                     height: 45px;
                     width: 45px;
                     position: relative;
                     box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
-                    img{
+
+                    img {
                         position: absolute;
                         top: 50%;
                         right: 50%;
@@ -50,4 +72,41 @@ main{
             }
         }
     }
+}
+@media only screen and (max-width: 768px){
+  
+
+    main {
+        margin-bottom: 350px;
+        .hero-container {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            align-items: center;
+        }
+    
+        .hero-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 20px;
+            width: 100%;
+    
+            h4,
+            h2,
+            p,
+            article {
+                
+                margin: 10px 14px;
+            }
+    
+           
+        }
+        .Image{
+            object-fit: contain;
+            object-position: center;
+            width: 90%;
+        }
+    }
+    
 }

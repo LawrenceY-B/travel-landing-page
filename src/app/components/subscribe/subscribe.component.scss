@@ -54,3 +54,16 @@ div {
         right: -2%;
     }
 }
+@media only screen and (max-width: 768px) {
+    div{
+        width: 95%;
+        height: 50vh;
+        justify-content: space-evenly;
+        h3{
+            text-align: center;
+            font-size: 28px;
+        }
+        
+    }
+   
+}
